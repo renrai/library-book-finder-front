@@ -1,0 +1,22 @@
+<div class="container my-5">
+    <h1 class="mb-3">Livros</h1>
+        <table class="table" *ngIf="books && books.length > 0">
+            <thead>
+                <tr>
+                    <th>Livro</th>
+                    <th>Autor</th>
+                    <th>Prateleira</th>
+                    <th>Ano</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let book of books">
+                    <td>{{book.BookName}}</td>
+                    <td>{{book.Author}}</td>
+                    <td>{{book.Shelf}}</td>
+                    <td>{{book.Year}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <p *ngIf="!books || books.length <= 0"> Nenhum livro encontrado</p>
+</div>
