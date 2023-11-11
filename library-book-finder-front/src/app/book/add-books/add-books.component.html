@@ -7,17 +7,21 @@
     <div class="row">
         <div class="col-6">
             <form #form="ngForm" (ngSubmit)="addNewBook()">
-                <div class="mb-3">
-                  <label for="bookName" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="bookName" name="BookName" [(ngModel)] = "addBook.BookName">
-                </div>
-                <div class="mb-3">
+                  <div class="mb-3">
+                    <label for="bookName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="bookName" name="BookName" [(ngModel)] = "addBook.BookName">
+                  </div>
+                  <div class="mb-3">
                     <label for="author" class="form-label">Autor</label>
                     <input type="text" class="form-control" id="author" name="Author" [(ngModel)] = "addBook.Author">
                   </div>
-                <div class="mb-3">
+                  <div class="mb-3">
                     <label for="shelf" class="form-label">Prateleira</label>
                     <input type="text" class="form-control" id="shelf" name="Shelf" [(ngModel)] = "addBook.Shelf">
+                  </div>
+                  <div class="mb-3">
+                    <label for="shelf" class="form-label">Gênero</label>
+                    <input type="text" class="form-control" id="genre" name="Genre" [(ngModel)] = "addBook.Genre">
                   </div>
                   <div class="mb-3">
                     <label for="year" class="form-label">Ano</label>

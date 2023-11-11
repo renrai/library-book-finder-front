@@ -15,6 +15,7 @@ export class AddBooksComponent implements OnInit {
     Id: '',
     Shelf: '',
     Author: '',
+    Genre: '',
     Year: 0
   }
   ngOnInit(): void{}
@@ -37,6 +38,7 @@ export class AddBooksComponent implements OnInit {
     this.addBook.Author = '';
     this.addBook.Shelf = '';
     this.addBook.BookName = '';
+    this.addBook.Genre = '';
     this.addBook.Year = 0;
   }
 }
